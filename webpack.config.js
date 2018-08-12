@@ -9,7 +9,7 @@ module.exports = {
   entry: "./src/js/index.js",
   output: {
     filename: "[name].js",
-    path: path.resolve(__dirname, "dist/js")
+    path: path.resolve(__dirname, "public", "dist", "js")
   },
   module: {
     rules: [
@@ -51,5 +51,5 @@ module.exports = {
   },
   mode,
   devtool: "source-map",
-  plugins: [new ExtractTextPlugin("css/style.css")]
+  plugins: [new ExtractTextPlugin("../css/style.css")]
 };
