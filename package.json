@@ -4,7 +4,9 @@
   "description": "DPOS delegate site",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "watch": "nodemon ./server.js --ignore public/ --ignore src/",
+    "assets": "webpack -w --display-max-modules 0",
+    "dev": "concurrently \"npm run watch\" \"npm run assets\""
   },
   "author": "Mateusz <gregooroo@gmail.com>",
   "license": "MIT",
@@ -16,6 +18,7 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
+    "concurrently": "^3.6.1",
     "css-loader": "^1.0.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^13.0.0",
