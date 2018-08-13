@@ -1,0 +1,13 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content ="ie-edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title #{title} | Gregoro delegate site
+    block css
+      link(rel="stylesheet" href="/dist/css/style.css")
+  body
+    block content
+    block scripts
+      script(src="/dist/js/main.js")
