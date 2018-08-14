@@ -1,10 +1,15 @@
 extends layout
+include mixins/_coinDetails
 
 block content
   section.home
     .coin-card
       .coin-card__logo.coin-card__logo--oxycoin
         img(src="/images/oxycoin-logo.png" alt="oxycoin-logo")
+      .coin-card__details
+        +coinDetails(coinDetails.shift)
     .coin-card
       .coin-card__logo.coin-card__logo--shift
         img(src="/images/shift-logo.png" alt="oxycoin-logo")
+      .coin-card__details
+        +coinDetails(coinDetails.oxycoin)

@@ -7,8 +7,10 @@
 }
 
 .coin-card {
+  display: flex;
+  flex-direction: column;
   width: 500px;
-  height: 240px;
+  height: 340px;
   background: #fff;
   margin: 5px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -42,5 +44,24 @@
   img {
     max-width: 100%;
     max-height: 100%;
+  }
+}
+
+.coin-card__details {
+  margin-top: auto;
+  &__list {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  &__item {
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    i {
+      color: $chicago;
+      &:hover {
+        font-size: 4em;
+      }
+    }
   }
 }

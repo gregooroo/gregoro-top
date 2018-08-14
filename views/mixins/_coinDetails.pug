@@ -1,0 +1,14 @@
+mixin coinDetails(details = {})
+  ul.coin-card__details__list
+    li.coin-card__details__item
+      a(href=details.poolWebsite target="_blank" title="Payouts history")
+        i(class="far fa-money-bill-alt fa-3x")
+    li.coin-card__details__item
+      a(href=details.delegate title="Delegate details")
+        i(class="fas fa-server fa-3x")
+    li.coin-card__details__item
+      a(href=details.mainWebsite target="_blank" title="Project website")
+        i(class="fas fa-home fa-3x")
+    li.coin-card__details__item
+      a(href=details.chat target="_blank" title="Community chat")
+        i(class="fas fa-comments fa-3x")
