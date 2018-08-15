@@ -3,6 +3,12 @@
   "webpack": {
     "mode": "development"
   },
+  "gulpSettings": {
+    "browserSync": {
+      "port": 3001,
+      "browser": "firefox-developer-edition"
+    }
+  },
   "coinDetails": {
     "oxycoin": {
       "poolWebsite": "https://pool.oxycoin.gregoro.top",

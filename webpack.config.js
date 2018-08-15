@@ -1,4 +1,3 @@
-const path = require("path");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const autoprefixer = require("autoprefixer");
 const {
@@ -8,8 +7,7 @@ const {
 module.exports = {
   entry: "./src/js/index.js",
   output: {
-    filename: "[name].js",
-    path: path.resolve(__dirname, "public", "dist", "js")
+    filename: "[name].js"
   },
   module: {
     rules: [

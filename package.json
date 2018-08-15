@@ -4,9 +4,8 @@
   "description": "DPOS delegate site",
   "scripts": {
     "start": "node server.js",
-    "watch": "nodemon ./server.js --ignore public/ --ignore src/",
-    "assets": "webpack -w --display-max-modules 0",
-    "dev": "concurrently \"npm run watch\" \"npm run assets\""
+    "assets": "gulp webpack",
+    "dev": "gulp"
   },
   "author": "Mateusz <gregooroo@gmail.com>",
   "license": "MIT",
@@ -19,7 +18,7 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
-    "concurrently": "^3.6.1",
+    "browser-sync": "^2.24.6",
     "css-loader": "^1.0.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^13.0.0",
@@ -27,12 +26,15 @@
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-prettier": "^2.6.2",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "gulp": "^4.0.0",
+    "gulp-nodemon": "^2.2.1",
     "node-sass": "^4.9.3",
     "nodemon": "^1.18.3",
     "postcss-loader": "^3.0.0",
     "prettier": "^1.14.2",
     "sass-loader": "^7.1.0",
     "webpack": "^4.16.5",
-    "webpack-cli": "^3.1.0"
+    "webpack-cli": "^3.1.0",
+    "webpack-stream": "^5.1.1"
   }
 }
