@@ -49,19 +49,20 @@
 
 .coin-card__details {
   margin-top: auto;
-  &__list {
-    text-align: center;
-    margin-bottom: 25px;
-  }
-  &__item {
-    display: inline-block;
-    margin: 10px;
+}
+
+.coin-card__details__list {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.coin-card__details__item {
+  display: inline-block;
+  margin: 10px;
+  button {
     cursor: pointer;
     i {
       color: $chicago;
-      &:hover {
-        font-size: 4em;
-      }
     }
   }
 }
