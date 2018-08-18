@@ -1,4 +1,23 @@
 extends layout
 
 block content
-  h1 It works
+  .table
+    div(class=`table-cell table-cell__logo table-cell__logo--${coin}`)
+      img(src=`/images/${coin}-logo.png` alt=`${coin} logo`)
+    .table-cell.table-cell__net Mainnet
+    .table-cell.table-cell__net Testnet
+    .table-cell.table-cell__title Username
+    .table-cell gregoro
+    .table-cell gregoro
+    .table-cell.table-cell__title Uptime
+    .table-cell 99%
+    .table-cell 99%
+    .table-cell.table-cell__title Rank
+    .table-cell 12
+    .table-cell 12
+    .table-cell.table-cell__title Produced blocks
+    .table-cell 1212
+    .table-cell 12123
+    .table-cell.table-cell__title Missed blocks
+    .table-cell 12
+    .table-cell 12
