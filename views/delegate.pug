@@ -7,17 +7,30 @@ block content
     .table-cell.table-cell__net Mainnet
     .table-cell.table-cell__net Testnet
     .table-cell.table-cell__title Username
-    .table-cell gregoro
-    .table-cell gregoro
+    .table-cell(data-value="mainnet.username")
+      i(class="fas fa-spin fa-spinner")
+    .table-cell(data-value="testnet.username")
+      i(class="fas fa-spin fa-spinner")
     .table-cell.table-cell__title Uptime
-    .table-cell 99%
-    .table-cell 99%
+    .table-cell(data-value="mainnet.productivity")
+      i(class="fas fa-spin fa-spinner")
+    .table-cell(data-value="testnet.productivity")
+      i(class="fas fa-spin fa-spinner")
     .table-cell.table-cell__title Rank
-    .table-cell 12
-    .table-cell 12
+    .table-cell(data-value="mainnet.rank")
+      i(class="fas fa-spin fa-spinner")
+    .table-cell(data-value="testnet.rank")
+      i(class="fas fa-spin fa-spinner")
     .table-cell.table-cell__title Produced blocks
-    .table-cell 1212
-    .table-cell 12123
+    .table-cell(data-value="mainnet.producedblocks")
+      i(class="fas fa-spin fa-spinner")
+    .table-cell(data-value="testnet.producedblocks")
+      i(class="fas fa-spin fa-spinner")
     .table-cell.table-cell__title Missed blocks
-    .table-cell 12
-    .table-cell 12
+    .table-cell(data-value="mainnet.missedblocks")
+      i(class="fas fa-spin fa-spinner")
+    .table-cell(data-value="testnet.missedblocks")
+      i(class="fas fa-spin fa-spinner")
+
+append scripts
+  script(src="/dist/js/delegateInfo.js")

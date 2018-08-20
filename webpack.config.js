@@ -5,7 +5,10 @@ const {
 } = require("./config.json");
 
 module.exports = {
-  entry: "./src/js/index.js",
+  entry: {
+    main: ["./src/js/index.js", "babel-polyfill"],
+    delegateInfo: "./src/js/delegateInfo/index.js"
+  },
   output: {
     filename: "[name].js"
   },

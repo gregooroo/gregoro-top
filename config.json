@@ -22,5 +22,27 @@
       "mainWebsite": "https://www.shiftnrg.org",
       "chat": "https://shiftnrg.ryver.com/application/login"
     }
+  },
+  "delegate": {
+    "oxycoin": {
+      "mainnet": {
+        "wallet": "http://199.247.0.155:10000",
+        "publicKey": "131be16a5f48a40d0fb87328d19e221d455cdeba8b346bce5660ef6eb11268ba"
+      },
+      "testnet": {
+        "wallet": "https://twallet.oxycoin.io",
+        "publicKey": "8212cb9bce7c4f5f52cd58c368a954b2e9ae7634c0d9f681d814865cf28dcd38"
+      }
+    },
+    "shift": {
+      "mainnet": {
+        "wallet": "https://wallet.shiftnrg.org",
+        "publicKey": "9b1acff956fc9bbb3ca2e79ae4adce79f4eb2673ed4e3722ea96bc4be6250cec"
+      },
+      "testnet": {
+        "wallet": "http://193.70.87.202:9405",
+        "publicKey": "9b1acff956fc9bbb3ca2e79ae4adce79f4eb2673ed4e3722ea96bc4be6250cec"
+      }
+    }
   }
 }

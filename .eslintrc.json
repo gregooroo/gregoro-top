@@ -3,6 +3,10 @@
   "rules": {
     "no-console": "off",
     "no-unused-vars": "off",
-    "consistent-return": "off"
+    "consistent-return": "off",
+    "class-methods-use-this": "off"
+  },
+  "env": {
+    "browser": true
   }
 }
