@@ -30,7 +30,7 @@ npm run assets
 npm start
 ```
 
-1. Open http://localhost:3000 in browser. **(Port can be changed in config.json file)**
+3. Open http://localhost:3000 in browser. **(Port can be changed in config.json file)**
 
 #### Development
 
