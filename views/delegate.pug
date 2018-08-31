@@ -4,8 +4,12 @@ block content
   .table
     div(class=`table-cell table-cell__logo table-cell__logo--${coin}`)
       img(src=`/images/${coin}-logo.png` alt=`${coin} logo`)
-    .table-cell.table-cell__net Mainnet
-    .table-cell.table-cell__net Testnet
+    .table-cell.table-cell__net
+      h1 Mainnet
+      a(class=`server-spec server-spec--${coin}` href=`/delegate/${coin}/spec/mainnet`) Servers specification
+    .table-cell.table-cell__net
+      h1 Testnet
+      a(class=`server-spec server-spec--${coin}` href=`/delegate/${coin}/spec/testnet`) Servers specification
     .table-cell.table-cell__title Username
     .table-cell(data-value="mainnet.username")
       i(class="fas fa-spin fa-spinner")
