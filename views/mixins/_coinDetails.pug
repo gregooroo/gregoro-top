@@ -1,18 +1,18 @@
 mixin coinDetails(details = {})
   ul.coin-card__details__list
     li.coin-card__details__item
-      a(href=details.poolWebsite target="_blank" title="Payouts history")
+      a(href=details.poolWebsite target="_blank")
         button(tooltip="Payouts history" tooltip-position="bottom")
           i(class="far fa-money-bill-alt fa-3x")
     li.coin-card__details__item
-      a(href=details.delegate title="Delegate details")
-        button(tooltip="Delegate details" tooltip-position="bottom")
+      a(href=details.delegate)
+        button(tooltip="Delegate info" tooltip-position="bottom")
           i(class="fas fa-server fa-3x")
     li.coin-card__details__item
-      a(href=details.mainWebsite target="_blank" title="Project's website")
+      a(href=details.mainWebsite target="_blank")
         button(tooltip="Project's website" tooltip-position="bottom")
           i(class="fas fa-home fa-3x")
     li.coin-card__details__item
-      a(href=details.chat target="_blank" title="Community chat")
+      a(href=details.h target="_blank")
         button(tooltip="Community chat" tooltip-position="bottom")
           i(class="fas fa-comments fa-3x")
