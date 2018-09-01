@@ -1,40 +1,41 @@
 extends layout
 
 block content
-  .table
-    div(class=`table-cell table-cell__logo table-cell__logo--${coin}`)
-      img(src=`/images/${coin}-logo.png` alt=`${coin} logo`)
-    .table-cell.table-cell__net
-      h1 Mainnet
-      a(class=`server-spec server-spec--${coin}` href=`/delegate/${coin}/spec/mainnet`) Servers specification
-    .table-cell.table-cell__net
-      h1 Testnet
-      a(class=`server-spec server-spec--${coin}` href=`/delegate/${coin}/spec/testnet`) Servers specification
-    .table-cell.table-cell__title Username
-    .table-cell(data-value="mainnet.username")
-      i(class="fas fa-spin fa-spinner")
-    .table-cell(data-value="testnet.username")
-      i(class="fas fa-spin fa-spinner")
-    .table-cell.table-cell__title Uptime
-    .table-cell(data-value="mainnet.productivity")
-      i(class="fas fa-spin fa-spinner")
-    .table-cell(data-value="testnet.productivity")
-      i(class="fas fa-spin fa-spinner")
-    .table-cell.table-cell__title Rank
-    .table-cell(data-value="mainnet.rank")
-      i(class="fas fa-spin fa-spinner")
-    .table-cell(data-value="testnet.rank")
-      i(class="fas fa-spin fa-spinner")
-    .table-cell.table-cell__title Produced blocks
-    .table-cell(data-value="mainnet.producedblocks")
-      i(class="fas fa-spin fa-spinner")
-    .table-cell(data-value="testnet.producedblocks")
-      i(class="fas fa-spin fa-spinner")
-    .table-cell.table-cell__title Missed blocks
-    .table-cell(data-value="mainnet.missedblocks")
-      i(class="fas fa-spin fa-spinner")
-    .table-cell(data-value="testnet.missedblocks")
-      i(class="fas fa-spin fa-spinner")
+  section.delegate
+    .table
+      div(class=`table-cell table-cell__logo table-cell__logo--${coin}`)
+        img(src=`/images/${coin}-logo.png` alt=`${coin} logo`)
+      .table-cell.table-cell__net
+        h1 Mainnet
+        a(class=`server-spec server-spec--${coin}` href=`/delegate/${coin}/spec/mainnet`) Servers specification
+      .table-cell.table-cell__net
+        h1 Testnet
+        a(class=`server-spec server-spec--${coin}` href=`/delegate/${coin}/spec/testnet`) Servers specification
+      .table-cell.table-cell__title Username
+      .table-cell(data-value="mainnet.username")
+        i(class="fas fa-spin fa-spinner")
+      .table-cell(data-value="testnet.username")
+        i(class="fas fa-spin fa-spinner")
+      .table-cell.table-cell__title Uptime
+      .table-cell(data-value="mainnet.productivity")
+        i(class="fas fa-spin fa-spinner")
+      .table-cell(data-value="testnet.productivity")
+        i(class="fas fa-spin fa-spinner")
+      .table-cell.table-cell__title Rank
+      .table-cell(data-value="mainnet.rank")
+        i(class="fas fa-spin fa-spinner")
+      .table-cell(data-value="testnet.rank")
+        i(class="fas fa-spin fa-spinner")
+      .table-cell.table-cell__title Produced blocks
+      .table-cell(data-value="mainnet.producedblocks")
+        i(class="fas fa-spin fa-spinner")
+      .table-cell(data-value="testnet.producedblocks")
+        i(class="fas fa-spin fa-spinner")
+      .table-cell.table-cell__title Missed blocks
+      .table-cell(data-value="mainnet.missedblocks")
+        i(class="fas fa-spin fa-spinner")
+      .table-cell(data-value="testnet.missedblocks")
+        i(class="fas fa-spin fa-spinner")
 
 append scripts
   script(src="/dist/js/delegateInfo.js")

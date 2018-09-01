@@ -1,16 +1,18 @@
-.container {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  h1 {
-    font-size: 150px;
+section.empty {
+  .container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    h1 {
+      font-size: 150px;
+    }
   }
-}
 
-p {
-  text-align: center;
-  font-size: 14px;
-  font-weight: 600;
+  p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+  }
 }
