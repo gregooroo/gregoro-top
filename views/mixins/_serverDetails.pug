@@ -1,0 +1,8 @@
+mixin serverDetails(details = [])
+  each detail in details
+    li.table__row
+      .col-col-2(data-label="Type") #{detail.type}
+      .col-col-3(data-label="CPU") #{detail.cpu}
+      .col-col-4(data-label="Storage") #{detail.storage}
+      .col-col-5(data-label="Memory") #{detail.memory}
+      .col-col-6(data-label="Location") #{detail.location}

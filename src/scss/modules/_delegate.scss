@@ -50,7 +50,7 @@ section.delegate {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    padding: 0;
+    padding: 12px;
     a.server-spec {
       padding: 12px;
       border: 2px solid;
@@ -58,7 +58,7 @@ section.delegate {
       font-weight: 600;
       text-transform: uppercase;
       font-size: 12px;
-      margin-top: 6px;
+      margin-top: 12px;
       transition: all 0.3s ease;
       &:hover {
         color: #fff;

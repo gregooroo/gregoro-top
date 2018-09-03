@@ -1,0 +1,14 @@
+extends layout
+include mixins/_serverDetails
+
+block content
+  section.server-spec
+    h1 #{net} servers specification
+    ul.table
+      li(class=`table__header table__header--${coin}`)
+        .col-col-2 Type
+        .col-col-3 CPU
+        .col-col-4 Storage
+        .col-col-5 Memory
+        .col-col-6 Location
+      +serverDetails(serverDetails)

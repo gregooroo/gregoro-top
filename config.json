@@ -44,5 +44,54 @@
         "publicKey": "9b1acff956fc9bbb3ca2e79ae4adce79f4eb2673ed4e3722ea96bc4be6250cec"
       }
     }
+  },
+  "serverDetails": {
+    "oxycoin": {
+      "mainnet": [
+        {
+          "type": "Master",
+          "cpu": "1 CPU",
+          "storage": "40GB",
+          "memory": "2GB",
+          "location": "Frankfurt"
+        }
+      ],
+      "testnet": [
+        {
+          "type": "Master",
+          "cpu": "1 CPU",
+          "storage": "40GB",
+          "memory": "2GB",
+          "location": "Warsaw"
+        }
+      ]
+    },
+    "shift": {
+      "mainnet": [
+        {
+          "type": "Master",
+          "cpu": "2 CPU",
+          "storage": "60GB",
+          "memory": "4GB",
+          "location": "Paris"
+        },
+        {
+          "type": "Backup",
+          "cpu": "1 CPU",
+          "storage": "40GB",
+          "memory": "2GB",
+          "location": "Amsterdam"
+        }
+      ],
+      "testnet": [
+        {
+          "type": "Master",
+          "cpu": "1 CPU",
+          "storage": "40GB",
+          "memory": "2GB",
+          "location": "Silicon Valley"
+        }
+      ]
+    }
   }
 }
